@@ -1,76 +1,105 @@
+*{
+	/* border: 2px solid red; */
+}
+
 /** Fuente del Viejo oeste **/
 
-@import url('https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
 
 /***** Fuente general *****/
 
-*, body, h1, h2, h3, h4, h5, h6, p, a, span, input, li {
-  font-family: 'Nunito', sans-serif;
+*,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span,
+input,
+li {
+  font-family: "Nunito", sans-serif;
 }
 
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 700;
 }
 
-.text-cwb, .text-cwb a, .text-cwb p {
-  font-family: 'Holtwood One SC', serif;
+.text-cwb,
+.text-cwb a,
+.text-cwb p {
+  font-family: "Holtwood One SC", serif;
 }
- 
+
 /** Menu**/
 .navbar-light .navbar-nav .nav-link {
-  color: rgba(0,0,0,.55);
+  color: rgba(0, 0, 0, 0.55);
   font-size: 20px;
   font-weight: 700;
 }
 
-
 /** iFrame Video width **/
-iframe { max-width: 100%;}
+iframe {
+  max-width: 100%;
+}
 
 /** Personalización de Carrusel **/
 .desc-carrusel {
-  background: rgba(0, 0,  0, 0.55);
+  background: rgba(0, 0, 0, 0.55);
   right: initial;
   bottom: 4rem;
-  left: 5%
+  left: 5%;
 }
 .btn-cwb {
   color: #fff;
-  background-color: #3A3DBA;
-  border-color: #3A3DBA;
+  background-color: #3a3dba;
+  border-color: #3a3dba;
 }
 
-.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
   color: #fff;
-  background-color: #3A3DBA;
+  background-color: #3a3dba;
 }
 
 .form-check-input:checked {
-  background-color: #3A3DBA;
-  border-color: #3A3DBA;
+  background-color: #3a3dba;
+  border-color: #3a3dba;
 }
 
 .blog-imagen img {
-width: 100%;
-height: 100%;
+  width: 100%;
+  height: 100%;
 }
 .redondo {
   border-radius: 50%;
   min-width: 45px;
   min-height: 45px;
-} 
+}
 
 /** Tabla de Standigs**/
 
 table.table.table-striped {
   font-size: 20px;
 }
-
 
 /** toggle dark mode**/
 .form-switch {
@@ -92,7 +121,7 @@ body {
 }
 
 .dark-mode .form-switch {
-  color: #3A3DBA;
+  color: #3a3dba;
 }
 
 .dark-mode .card {
@@ -104,23 +133,22 @@ body {
   background-color: #fff0;
   background-clip: border-box;
   border: 1px solid rgb(255 248 248 / 13%);
-  border-radius: .25rem;
+  border-radius: 0.25rem;
 }
 
 .dark-mode .mb-4.p-3.border.rounded.bg-light {
-  background-color: #f8f9fa00!important;
+  background-color: #f8f9fa00 !important;
 }
 
-.dark-mode .table { 
+.dark-mode .table {
   color: #fff;
 }
 
-.dark-mode .table-striped>tbody>tr:nth-of-type(odd) {
+.dark-mode .table-striped > tbody > tr:nth-of-type(odd) {
   color: #fff;
 }
 
 .dark-mode footer.bg-light {
-  background-color:#fff0 !important;
+  background-color: #fff0 !important;
   border-top: 1px solid rgb(255 248 248 / 13%);
 }
-

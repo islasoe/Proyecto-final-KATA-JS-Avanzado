@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta
+      name="author"
+      content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
+    />
+    <meta name="generator" content="Hugo 0.87.0" />
+    <title>Dallas Cowboys | Pricing</title>
+
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/5.1/examples/pricing/"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap core CSS -->
+    <link href="asset/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    <!-- Custom styles for this template -->
+    <link href="asset/css/pricing.css" rel="stylesheet" />
+    <link href="asset/css/main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+      <symbol id="check" viewBox="0 0 16 16">
+        <title>Check</title>
+        <path
+          d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"
+        />
+      </symbol>
+    </svg>
+    <!-- <div class="container py-3"> -->
+    <header>
+      <nav
+        class="
+          navbar navbar-expand-md
+          fixed-top
+          navbar-light
+          bg-light
+          shadow-sm
+        "
+      >
+        <div id="logo" class="container">
+          <a class="navbar-brand text-cwb text-capitalize" href="index.html"
+            ><img
+              src="img/logo_dc.svg"
+              alt=""
+              width="30"
+              height="24"
+              class="d-inline-block align-text-top"
+            />Cowboys Blog&nbsp;</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link" href="pricing.html">Pricing</a>
+            </div>
+          </div>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-secondary" type="submit">
+              Search
+            </button>
+          </form>
+          <div class="form-check form-switch">
+            <input
+              onclick="myFunction()"
+              class="form-check-input"
+              type="checkbox"
+              id="flexSwitchCheckDefault"
+            />
+            <label class="form-check-label" for="flexSwitchCheckDefault">
+              <span class="material-icons"> nightlight_round </span></label
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <div class="container mb-4">
+          <div class="row row-cols-1 row-cols-md-3 mb-3 text-center mt-5">
+            <div class="col">
+              <div class="card mb-4 rounded-3 shadow-sm">
+                <div class="card-header py-3">
+                  <h4 class="my-0 fw-normal">Free</h4>
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title pricing-card-title">
+                    $0<small class="text-muted fw-light">/mo</small>
+                  </h1>
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <li>Dolore proident dolore magna aliqua.</li>
+                    <li>
+                      Nulla duis dolor fugiat consequat id incididunt laborum ut
+                      culpa.
+                    </li>
+                    <li>
+                      Dolore adipisicing labore veniam cupidatat cupidatat
+                      consectetur proident enim sit nulla eiusmod consequat.
+                    </li>
+                    <li>Voluptate cupidatat nisi consequat deserunt anim.</li>
+                  </ul>
+                  <button
+                    type="button"
+                    class="w-100 btn btn-lg btn-outline-primary"
+                  >
+                    Sign up for free
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card mb-4 rounded-3 shadow-sm">
+                <div class="card-header py-3">
+                  <h4 class="my-0 fw-normal">Pro</h4>
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title pricing-card-title">
+                    $15<small class="text-muted fw-light">/mo</small>
+                  </h1>
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <li>Irure fugiat sit qui et do.</li>
+                    <li>
+                      Lorem velit velit dolor ullamco veniam qui anim cupidatat.
+                    </li>
+                    <li>Ad mollit reprehenderit eiusmod deserunt.</li>
+                    <li>Nulla aute eiusmod tempor irure elit in.</li>
+                  </ul>
+                  <button type="button" class="w-100 btn btn-lg btn-primary">
+                    Get started
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                <div
+                  class="card-header py-3 text-white bg-primary border-primary"
+                >
+                  <h4 class="my-0 fw-normal">Enterprise</h4>
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title pricing-card-title">
+                    $29<small class="text-muted fw-light">/mo</small>
+                  </h1>
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <li>
+                      Lorem elit Lorem reprehenderit dolore do tempor
+                      reprehenderit do ex consequat ex laboris.
+                    </li>
+                    <li>
+                      Cillum enim incididunt pariatur ut velit amet aliquip sint
+                      et minim.
+                    </li>
+                    <li>
+                      Cillum pariatur dolor et dolor anim nulla sint in veniam
+                      voluptate fugiat exercitation reprehenderit.
+                    </li>
+                    <li>
+                      Sint excepteur sunt dolor aute labore pariatur nisi sint
+                      quis sint adipisicing et amet incididunt.
+                    </li>
+                  </ul>
+                  <button type="button" class="w-100 btn btn-lg btn-primary">
+                    Contact us
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h2 class="display-6 text-center mb-4">Compare plans</h2>
+
+          <div class="table-responsive">
+            <table class="table text-center">
+              <thead>
+                <tr>
+                  <th style="width: 34%"></th>
+                  <th style="width: 22%">Free</th>
+                  <th style="width: 22%">Pro</th>
+                  <th style="width: 22%">Enterprise</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row" class="text-start">Public</th>
+                  <td>
+                    <svg class="bi" width="24" height="24">
+                      <use xlink:href="#check" />
+                    </svg>
+                  </td>
+                  <td>
+                    <svg class="bi" width="24" height="24">
+                      <use xlink:href="#check" />
+                    </svg>
+                  </td>
+                  <td>
+                    <svg class="bi" width="24" height="24">
+                      <use xlink:href="#check" />
+                    </svg>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-start">Private</th>
+                  <td></td>
+                  <td>
+                    <svg class="bi" width="24" height="24">
+                      <use xlink:href="#check" />
+                    </svg>
+                  </td>
+                  <td>
+                    <svg class="bi" width="24" height="24">
+                      <use xlink:href="#check" />
+                    </svg>
+                  </td>
+                </tr>
+              </tbody>
+
+              <tbody>
+                <tr>
+                  <th scope="row" class="text-start">Permissions</th>
+                  <td>
+                    <svg class="bi" width="24" height="24">
+                      <use xlink:href="#check" />
+                    </svg>
+                  </td>
+                  <td>
+                    <svg class="bi" width="24" height="24">
+                      <use xlink:href="#check" />
+                    </svg>
+                  </td>
+                  <td>
+                    <svg class="bi" width="24" height="24">
+                      <use xlink:href="#check" />
+                    </svg>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-start">Sharing</th>
+                  <td></td>
+                  <td>
+                    <svg class="bi" width="24" height="24">
+                      <use xlink:href="#check" />
+                    </svg>
+                  </td>
+                  <td>
+                    <svg class="bi" width="24" height="24">
+                      <use xlink:href="#check" />
+                    </svg>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-start">Unlimited members</th>
+                  <td></td>
+                  <td>
+                    <svg class="bi" width="24" height="24">
+                      <use xlink:href="#check" />
+                    </svg>
+                  </td>
+                  <td>
+                    <svg class="bi" width="24" height="24">
+                      <use xlink:href="#check" />
+                    </svg>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-start">Extra security</th>
+                  <td></td>
+                  <td></td>
+                  <td>
+                    <svg class="bi" width="24" height="24">
+                      <use xlink:href="#check" />
+                    </svg>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-light">
+      <div class="container pt-4 pb-4">
+        <div class="row">
+          <div class="col-12 col-md">
+            <span class="text-cwb text-capitalize"
+              ><img
+                src="img/logo_dc.svg"
+                alt=""
+                width="30"
+                height="24"
+                class="d-inline-block align-text-top"
+              />Cowboys Blog</span
+            >
+            <small class="d-block mb-3 text-muted">&copy; 2017–2021</small>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Features</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="link-secondary" href="#">Cool stuff</a></li>
+              <li><a class="link-secondary" href="#">Random feature</a></li>
+              <li><a class="link-secondary" href="#">Team feature</a></li>
+              <li>
+                <a class="link-secondary" href="#">Stuff for developers</a>
+              </li>
+              <li><a class="link-secondary" href="#">Another one</a></li>
+              <li><a class="link-secondary" href="#">Last time</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Resources</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="link-secondary" href="#">Resource name</a></li>
+              <li><a class="link-secondary" href="#">Resource</a></li>
+              <li><a class="link-secondary" href="#">Another resource</a></li>
+              <li><a class="link-secondary" href="#">Final resource</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Resources</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="link-secondary" href="#">Business</a></li>
+              <li><a class="link-secondary" href="#">Education</a></li>
+              <li><a class="link-secondary" href="#">Government</a></li>
+              <li><a class="link-secondary" href="#">Gaming</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>About</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="link-secondary" href="#">Team</a></li>
+              <li><a class="link-secondary" href="#">Locations</a></li>
+              <li><a class="link-secondary" href="#">Privacy</a></li>
+              <li><a class="link-secondary" href="#">Terms</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- </div> -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      crossorigin="anonymous"
+    ></script>
+    <script src="asset/js/main.js"></script>
+  </body>
+</html>
