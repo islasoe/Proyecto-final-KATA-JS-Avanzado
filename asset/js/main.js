@@ -61,30 +61,41 @@ const buttonGET = document.getElementById("buttonGET");
 buttonGET.onclick = () => {
   console.log("typeof(items)");
   console.log(typeof items);
+  console.log(items);
   items.conferences.forEach((element) => {
     console.log("element");
     console.log(element);
     console.log(typeof element);
-    element.divisions.forEach((item) => {
+    element.divisions.forEach((items) => {
       // console.log(item['name'])
-      if (item["id"] == "6dab3ca1-b9cb-403f-91dd-b2a3708ab060") {
-        console.log(item);
+      if (items["id"] == "6dab3ca1-b9cb-403f-91dd-b2a3708ab060") {
+        console.log(items);
         var table = document.getElementById("myTable");
         let i = 1;
-        Object.entries(item).forEach(([key, value]) => {
-          console.log(key, value);
-          var row = table.insertRow(i);
-          var cell1 = row.insertCell(0);
-          var cell2 = row.insertCell(1);
-          var cell3 = row.insertCell(2);
-          var cell4 = row.insertCell(3);
-          var cell5 = row.insertCell(4);
-          var cell6 = row.insertCell(5);
-          cell1.innerHTML = i;
-          cell2.innerHTML = element['name'];
-          // cell3.innerHTML = value["saldo"];
-          i += 1;
-        });
+        items.teams.forEach((item) => 
+        {
+          console.log(item)
+          // Object.entries(item).forEach(([key, value]) => {
+            // console.log(key, value);
+            var row = table.insertRow(i);
+            var cell1 = row.insertCell(0);
+            var cell2 = row.insertCell(1);
+            var cell3 = row.insertCell(2);
+            var cell4 = row.insertCell(3);
+            var cell5 = row.insertCell(4);
+            var cell6 = row.insertCell(5);
+            cell1.innerHTML = i;
+            cell2.innerHTML = item['name'];
+            cell3.innerHTML = item['wins'];
+            cell4.innerHTML = item['losses'];
+            cell5.innerHTML = item['ties'];
+            cell6.innerHTML = item['win_pct'];
+
+            // cell3.innerHTML = value["saldo"];
+            i += 1;
+          // });
+        })
+
       }
     });
   });
