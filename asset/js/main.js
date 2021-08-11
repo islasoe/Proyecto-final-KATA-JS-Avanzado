@@ -101,4 +101,47 @@ buttonGET.onclick = () => {
   });
 };
 
-function myFunction() {}
+// btn de obtener el rancho
+const buttonGETRancho = document.getElementById("buttonGETRancho");
+
+buttonGETRancho.onclick = () => {
+  console.log("buttonGETRancho onClick");
+  let divRancho = document.getElementById("teamRancho");
+  console.log(divRancho)
+  
+  listPlayers.players.forEach((item) => {
+    console.log(item)
+    
+  // DOM del Item
+  let newDivCard = document.createElement("div");
+  newDivCard.classList.add("card");
+  let newDivCardBody = document.createElement("div");
+  newDivCardBody.classList.add("card-body")
+  let newCardTitle = document.createElement("h5");
+  newCardTitle.classList.add("card-title")
+  
+  let newCardText0 = document.createElement("p");
+  newCardText0.classList.add("card-text")
+  let newCardTxt = document.createTextNode("xxxxx")
+  newCardText0.appendChild(newCardTxt)
+
+  let newCardText1 = document.createElement("p");
+  newCardText1.classList.add("card-text")
+  let newCardTxt1 = document.createTextNode("xxxxx")
+  newCardText1.appendChild(newCardTxt1)
+
+  newDivCardBody.appendChild(newCardTitle)
+  newDivCardBody.appendChild(newCardText0)
+  newDivCardBody.appendChild(newCardText1)
+  newDivCard.appendChild(newDivCardBody)
+  divRancho.appendChild(newDivCard)
+  
+
+
+
+  })
+};
+
+
+// funcion para leer data de estadisticas
+function myFunctionLoad() {}
