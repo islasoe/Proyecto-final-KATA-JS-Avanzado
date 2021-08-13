@@ -145,3 +145,5 @@ buttonGETRancho.onclick = () => {
 
 // funcion para leer data de estadisticas
 function myFunctionLoad() {}
+
+// DEVF
