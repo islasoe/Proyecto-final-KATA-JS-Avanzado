@@ -38,7 +38,7 @@ function showPlayers(pokemon) {
   //Crear jersey
   let pokeJersey = document.createElement("p");
   pokeJersey.innerHTML = `N° jersey ${pokemon.jersey} ()`;
-  pokeJersey.className = "card-text text-center ";
+  pokeJersey.className = "card-text text-center jersey ";
   pokeCard.appendChild(pokeJersey);
 
   // crear abbr_name
